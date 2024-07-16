@@ -7,34 +7,35 @@ import { PinContainer } from "./ui/Pin";
 
 const RecentProjects = () => {
   return (
-    <div className="py-20">
+    <section className="py-20" id="projects">
       <h1 className="heading">
         A small selection of{" "}
         <span className="text-purple">recent projects</span>
       </h1>
-      <div className="flex flex-wrap items-center justify-center p-4 gap-16 mt-10">
+      <div className="flex flex-wrap items-center justify-center p-5 gap-x-[3%] gap-y-8 mt-10">
         {projects.map((item) => (
           <div
-            className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]"
+            className="sm:h-[41rem] h-[32rem] lg:min-h-[32.5rem] flex items-center justify-center sm:w-[570px] w-[80vw]"
             key={item.id}
           >
-            <PinContainer
-              title={item?.gitLink}
-              href={item?.gitLink}
-            >
-              <div className="relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[20vh] lg:h-[30vh] mb-10">
+            <PinContainer title={item?.gitLink} href={item?.gitLink}>
+              <a
+                href={item?.gitLink}
+                target={"_blank"}
+                className="relative flex items-center justify-center sm:w-[470px] w-[80vw] overflow-hidden sm:h-[40vh] h-[43vh] lg:h-[43vh] mb-10"
+              >
                 <div
-                  className="relative w-full h-full overflow-hidden lg:rounded-3xl"
+                  className="relative w-full h-full overflow-hidden rounded-3xl"
                   style={{ backgroundColor: "#13162D" }}
                 >
-                  <img src="/bg.png" alt="bgimg"/>
+                  <img src="/bg.png" alt="bgimg" />
                 </div>
                 <img
                   src={item.img}
                   alt="cover"
-                  className="z-10 absolute bottom-0 "
+                  className="z-10 absolute bottom-[-3rem] h-[20rem] w-[23rem] rounded-[0.8rem] rotate-3"
                 />
-              </div>
+              </a>
 
               <h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1">
                 {item.title}
@@ -66,7 +67,11 @@ const RecentProjects = () => {
                 </div>
 
                 <div className="flex justify-center items-center">
-                  <a href={item.link} target="_blank" className="flex lg:text-xl md:text-xs text-sm text-purple">
+                  <a
+                    href={item.link}
+                    target="_blank"
+                    className="flex lg:text-xl md:text-xs text-sm text-purple"
+                  >
                     Check Live Site
                   </a>
                   <FaLocationArrow className="ms-3" color="#CBACF9" />
@@ -76,7 +81,7 @@ const RecentProjects = () => {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

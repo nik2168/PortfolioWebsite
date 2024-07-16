@@ -1,7 +1,7 @@
 export const navItems = [
   { name: "About", link: "#about" },
   { name: "Projects", link: "#projects" },
-  { name: "Testimonials", link: "#testimonials" },
+  // { name: "Testimonials", link: "#testimonials" },
   { name: "Contact", link: "#contact" },
 ];
 
@@ -72,14 +72,6 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
-    title: "3D Solar System Planets to Explore",
-    des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
-    img: "/p1.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "/ui.earth.com",
-  },
-  {
-    id: 2,
     title: "Nox Chat - Real Time Chat App",
     des: "We can signUp, make friends, can create groups, send attachments & many more",
     img: "/noxChat.jpg",
@@ -88,13 +80,21 @@ export const projects = [
     gitLink: "https://github.com/nik2168/Nox-Chat.git",
   },
   {
-    id: 3,
+    id: 2,
     title: "Nox Weather - Real Time Weather",
     des: "We can fetch & add cities around the globe for their live weather status, it shows the background according to the weather conditions & 6 days temperature graphs",
     img: "/noxWeather.jpg",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
     link: "https://nox-weather-frontend.vercel.app/",
     gitLink: "https://github.com/nik2168/Weather-Project.git",
+  },
+  {
+    id: 3,
+    title: "3D Solar System Planets to Explore",
+    des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
+    img: "/p1.svg",
+    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
+    link: "/ui.earth.com",
   },
   {
     id: 4,
@@ -207,13 +207,16 @@ export const socialMedia = [
   {
     id: 1,
     img: "/git.svg",
+    link: "https://github.com/nik2168",
   },
   {
     id: 2,
-    img: "/twit.svg",
+    img: "/wha.svg",
+    link: "https://wa.link/rhv6a6",
   },
   {
     id: 3,
     img: "/link.svg",
+    link: "https://www.linkedin.com/in/nikhil-yadav-5358ba296/",
   },
 ];
