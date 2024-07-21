@@ -90,11 +90,12 @@ export const projects = [
   },
   {
     id: 3,
-    title: "3D Solar System Planets to Explore",
-    des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
-    img: "/p1.svg",
+    title: "Delhi Metro Map",
+    des: "We can find the shortest path between any two metro station ...",
+    img: "/DelhiMetro.jpg",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "/ui.earth.com",
+    link: "https://delhi-metro-map.vercel.app/",
+    gitLink: "https://github.com/nik2168/delhiMetroJsProject.git",
   },
   {
     id: 4,
