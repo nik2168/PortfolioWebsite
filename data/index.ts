@@ -227,6 +227,6 @@ export const socialMedia = [
   {
     id: 3,
     img: "/link.svg",
-    link: "www.linkedin.com/in/nikhil-koshal",
+    link: "https://www.linkedin.com/in/nikhil-koshal",
   },
 ];
